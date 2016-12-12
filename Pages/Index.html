@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script language="javaScript" type="text/javascript" src="../Scripts/JavaScript.js" ></script>
+    <link rel="stylesheet" type="text/css" href="../Css/StyleSheet.css"/>
+</head>
+<body>
+    <form>
+        <p>
+            <!--Cuando corto o pego con botón derecho del ratón, no me actualiza el botón :(-->
+            <div id="nombre">Nombre:</div>
+            <input type="text" id="txtNombre" maxlength="40" onkeyup="puedeSaludar()"/>
+            <div id="errorNombre" class="error"></div>
+        </p>
+        <p>
+            <div id="apellidos">Apellidos:</div>
+            <input type="text" id="txtApellidos" maxlength="40" onkeyup="puedeSaludar()"/>
+            <div id="errorApellidos" class="error"></div>
+        </p>
+        <input type="button" onclick="saludo2()" value="Púlsame"/>
+        <input type="button" id="boton2" value="Soy Especial" onclick="saluda()" disabled="disabled"/>
+        <div id="divMensaje"></div>
+    </form>
+</body>
+</html>
